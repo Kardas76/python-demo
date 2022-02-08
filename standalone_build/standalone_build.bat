@@ -1,0 +1,1 @@
+pyinstaller --clean standalone_build.spec

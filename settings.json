@@ -1,0 +1,177 @@
+{
+    "devices": [
+        {
+            "address": "1",
+            "device_name": "renamed_rtu",
+            "device_type": {
+                "py/reduce": [
+                    {
+                        "py/type": "model.settings.settings_manager.SettingsManager.Device.DeviceType"
+                    },
+                    {
+                        "py/tuple": [
+                            0
+                        ]
+                    }
+                ]
+            },
+            "id": "b8b41630-fd91-4da5-9808-a1383207aa0a",
+            "py/object": "model.settings.settings_manager.SettingsManager.Device",
+            "settings_change_identifier": "807c0448-17d8-456e-863c-621d91a741f4"
+        },
+        {
+            "address": "1",
+            "device_name": "renamed_tcp",
+            "device_type": {
+                "py/id": 3
+            },
+            "id": "31a41d34-8daa-4f9c-b0c9-2b60f46af098",
+            "py/object": "model.settings.settings_manager.SettingsManager.Device",
+            "settings_change_identifier": "a94ca657-dd0c-4cc5-914e-c7baa7dedc7b"
+        },
+        {
+            "address": "18",
+            "device_name": "a_Zen_main",
+            "device_type": {
+                "py/id": 3
+            },
+            "id": "6dcdba88-a9f0-4f48-aa32-6d4390f83f86",
+            "py/object": "model.settings.settings_manager.SettingsManager.Device",
+            "settings_change_identifier": "a765e5ab-27d0-484d-bb3b-8c50c3fdaf47"
+        },
+        {
+            "address": "18",
+            "device_name": "Zen_bramka8",
+            "device_type": {
+                "py/id": 3
+            },
+            "id": "dd8d7966-868b-4196-bad9-2d5fb8d4a764",
+            "py/object": "model.settings.settings_manager.SettingsManager.Device",
+            "settings_change_identifier": "22463bd6-84c7-49a3-b972-b526df6b2643"
+        }
+    ],
+    "driver_settings": [
+        {
+            "fk_device": "b8b41630-fd91-4da5-9808-a1383207aa0a",
+            "fk_interface": "582fccf0-92c1-4a72-b3e0-ae1c04427dcd",
+            "id": "43a2b3fa-59ed-47f8-b603-e57319af90d6",
+            "py/object": "model.settings.settings_manager.SettingsManager.DeviceDriverSettings"
+        },
+        {
+            "fk_device": "31a41d34-8daa-4f9c-b0c9-2b60f46af098",
+            "fk_interface": "09731e15-f2f7-40a5-a2a1-60889c884ce7",
+            "id": "3d3e3d14-1a07-442a-9996-b2dc08d59e3f",
+            "py/object": "model.settings.settings_manager.SettingsManager.DeviceDriverSettings"
+        },
+        {
+            "fk_device": "6dcdba88-a9f0-4f48-aa32-6d4390f83f86",
+            "fk_interface": "ed688b59-ace9-499b-bb10-092e30728e7d",
+            "id": "6255928e-1f4c-47cc-a1b4-add2cf45414a",
+            "py/object": "model.settings.settings_manager.SettingsManager.DeviceDriverSettings"
+        },
+        {
+            "fk_device": "dd8d7966-868b-4196-bad9-2d5fb8d4a764",
+            "fk_interface": "b7860f53-15e1-4d6a-ba5a-84505586100b",
+            "id": "c3c22e81-f947-43bc-ba3e-13abf9d38254",
+            "py/object": "model.settings.settings_manager.SettingsManager.DeviceDriverSettings"
+        }
+    ],
+    "interfaces": [
+        {
+            "id": "582fccf0-92c1-4a72-b3e0-ae1c04427dcd",
+            "interface_name": "1",
+            "protocol_type": {
+                "py/reduce": [
+                    {
+                        "py/type": "model.settings.settings_manager.SettingsManager.Interface.ProtocolType"
+                    },
+                    {
+                        "py/tuple": [
+                            0
+                        ]
+                    }
+                ]
+            },
+            "py/object": "model.settings.settings_manager.SettingsManager.Interface"
+        },
+        {
+            "id": "09731e15-f2f7-40a5-a2a1-60889c884ce7",
+            "interface_name": "TCP_inteface",
+            "protocol_type": {
+                "py/reduce": [
+                    {
+                        "py/type": "model.settings.settings_manager.SettingsManager.Interface.ProtocolType"
+                    },
+                    {
+                        "py/tuple": [
+                            1
+                        ]
+                    }
+                ]
+            },
+            "py/object": "model.settings.settings_manager.SettingsManager.Interface"
+        },
+        {
+            "id": "ed688b59-ace9-499b-bb10-092e30728e7d",
+            "interface_name": "Zen_main",
+            "protocol_type": {
+                "py/id": 16
+            },
+            "py/object": "model.settings.settings_manager.SettingsManager.Interface"
+        },
+        {
+            "id": "b7860f53-15e1-4d6a-ba5a-84505586100b",
+            "interface_name": "TCP_bramka",
+            "protocol_type": {
+                "py/id": 16
+            },
+            "py/object": "model.settings.settings_manager.SettingsManager.Interface"
+        }
+    ],
+    "py/object": "model.settings.settings_manager.SettingsManager.Settings",
+    "serial_interfaces": [
+        {
+            "baud_rate": 9600,
+            "data_bits": 8,
+            "fk_interface": "582fccf0-92c1-4a72-b3e0-ae1c04427dcd",
+            "id": "a2ac9604-b105-460a-9c2c-25d1de75a51f",
+            "pairity": null,
+            "port_name": "COM3",
+            "py/object": "model.settings.settings_manager.SettingsManager.SerialInterface",
+            "stop_bits": 1,
+            "timeout": "1"
+        }
+    ],
+    "tcp_interfaces": [
+        {
+            "FTP_password": "",
+            "FTP_user": "",
+            "TCP_address": "192.168.0.89",
+            "fk_interface": "ed688b59-ace9-499b-bb10-092e30728e7d",
+            "id": "78caa9f1-37bb-40d6-8a7c-4a3216fa6df4",
+            "port": "502",
+            "py/object": "model.settings.settings_manager.SettingsManager.TcpInterface",
+            "timeout": "1"
+        },
+        {
+            "FTP_password": "",
+            "FTP_user": "",
+            "TCP_address": "192.168.0.74",
+            "fk_interface": "09731e15-f2f7-40a5-a2a1-60889c884ce7",
+            "id": "a14e5c3d-ae41-4cab-a103-cb2b176b33ea",
+            "port": "502",
+            "py/object": "model.settings.settings_manager.SettingsManager.TcpInterface",
+            "timeout": "1"
+        },
+        {
+            "FTP_password": "",
+            "FTP_user": "",
+            "TCP_address": "192.168.0.104",
+            "fk_interface": "b7860f53-15e1-4d6a-ba5a-84505586100b",
+            "id": "8361df73-3f65-4e3a-bd50-896bec090d64",
+            "port": "502",
+            "py/object": "model.settings.settings_manager.SettingsManager.TcpInterface",
+            "timeout": "1"
+        }
+    ]
+}

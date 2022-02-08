@@ -1,0 +1,13 @@
+Specyfikacja wymagań oprogramowania.
+
+Nazwa: IPA Software
+Firma: Zenex sp. z o. o.
+Autorzy:
+  Dariusz Makarewicz
+
+Wymagania funkcjonalne:
+  WF1:  Komunikacja z analizatorem energii Zenex IPA w celu odczytu mierzonych parametrów sieci oraz odczytu i zmiany konfiguracji urządzenia.
+        WF1.1 Komunikacja za pomocą protokołu MODBUS RTU ( Konwerter USB <-> RS458 )
+        WF1.2 ...
+  
+  WF2: Wyświetlanie danych pomiarowych zgodnie dla różnych parametrów konfiguracji - zmiana pomiarów faz, częstotliwości pomiarów. Globalne dla aplikacji ustawienia protokołu, połączenia. Dodawanie ustawień w zależności od wybranych urządzeń.

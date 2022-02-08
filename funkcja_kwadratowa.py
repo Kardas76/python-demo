@@ -28,6 +28,7 @@ class FunkcjaKwadratowa:
 def main():
     f1 = FunkcjaKwadratowa(2, 3, 1)
     f1.wypisz()
+<<<<<<< HEAD
     f2 = FunkcjaKwadratowa (6, 4, 3)
     f2 .wypisz()
     
@@ -35,6 +36,10 @@ def main():
     print(f1.oblicz_wartosc(1))
     print(f2.oblicz_wartosc(0))
     print(f2.oblicz_wartosc(1))
+=======
+    print(f1.oblicz_wartosc(0))
+    print(f1.oblicz_wartosc(1))
+>>>>>>> 948e57fbbdac6580e9ae7aeeb992ac030c3ee85d
 
     print(FunkcjaKwadratowa(0, 0, 0).rozwiaz())
     print(FunkcjaKwadratowa(0, 0, 1).rozwiaz())

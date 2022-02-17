@@ -1,11 +1,10 @@
 import sys
 
-from PyQt5.QtWidgets import (
-    QApplication, QDialog, QMainWindow, QMessageBox
-)
+from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow, QMessageBox
 from PyQt5.uic import loadUi
 
 from main_window_ui import Ui_MainWindow
+
 
 class Window(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -14,10 +13,9 @@ class Window(QMainWindow, Ui_MainWindow):
         self.connectSignalsSlots()
 
     def connectSignalsSlots(self):
-      ##  self.action_Exit.triggered.connect(self.close)
-       ## self.action_Find_Replace.triggered.connect(self.findAndReplace)
-      ##  self.action_About.triggered.connect(self.about)
-      pass
+        self.action_Exit.triggered.connect(self.close)
+        self.action_find_and_replace.triggered.connect(self.findAndReplace)
+        self.action_About.triggered.connect(self.about)
 
     def findAndReplace(self):
         dialog = FindReplaceDialog(self)
@@ -33,10 +31,12 @@ class Window(QMainWindow, Ui_MainWindow):
             "<p>- Python</p>",
         )
 
+
 class FindReplaceDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         loadUi("ui/find_replace.ui", self)
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

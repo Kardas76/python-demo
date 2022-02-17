@@ -86,6 +86,7 @@
     <addaction name="action_Cut"/>
     <addaction name="separator"/>
     <addaction name="action_Paste"/>
+    <addaction name="action_find_and_replace"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
@@ -250,6 +251,17 @@
   <action name="action_abut">
    <property name="text">
     <string>&amp;About...</string>
+   </property>
+  </action>
+  <action name="action_find_and_replace">
+   <property name="text">
+    <string>&amp;Find_and_Replace...</string>
+   </property>
+   <property name="toolTip">
+    <string>find_and_replace</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
    </property>
   </action>
  </widget>
